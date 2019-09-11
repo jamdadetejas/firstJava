@@ -9,6 +9,9 @@ pipeline {
         DOCKER_IMAGE_NAME = "deepk/assign2:2.1"
 
     }
+    
+        docker { image 'deepk/assign2:2.1' }
+    
 
     stages {
 
