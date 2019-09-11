@@ -10,8 +10,10 @@ pipeline {
 
     }
     
-        docker { image 'deepk/assign2:2.1' }
+    agent{
     
+        docker { image 'deepk/assign2:2.1' }
+    }
 
     stages {
 
