@@ -28,7 +28,7 @@ pipeline {
 
                     //app.inside {
 
-                    //    sh 'echo Hello, World!'
+                       sh 'echo Hello, World!'
 
                     //}
 
