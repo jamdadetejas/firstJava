@@ -6,15 +6,11 @@ pipeline {
 
         //Input Docker registry name and image name
 
-        DOCKER_IMAGE_NAME = "deepk/assign2:2.1"
+        DOCKER_IMAGE_NAME = "deepk/assign2:1.2"
 
     }
     
-    agent{
-    
-        docker { image 'deepk/assign2:2.1' }
-    }
-
+   
     stages {
 
         stage('Build Docker Image') {
