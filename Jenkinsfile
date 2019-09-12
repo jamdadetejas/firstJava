@@ -12,6 +12,12 @@ pipeline {
     
    
     stages {
+        
+        stage('pull docker images') {
+            agent {
+                docker { image 'deepk/assign2:1.2' }
+            }
+        }
 
         stage('Build Docker Image') {
 
