@@ -1,14 +1,4 @@
 pipeline {
-
-    agent any
-
-    environment {
-
-        //Input Docker registry name and image name
-
-        DOCKER_IMAGE_NAME = "deepk/assign2:1.2"
-
-    }
     stage('codeQuality') {
     }
      stage('Security Yasca') {
@@ -20,6 +10,17 @@ pipeline {
     }
      stage('perfomance') {
     }
+
+    agent any
+
+    environment {
+
+        //Input Docker registry name and image name
+
+        DOCKER_IMAGE_NAME = "deepk/assign2:1.2"
+
+    }
+    
    
    
     stages {
