@@ -9,7 +9,18 @@ pipeline {
         DOCKER_IMAGE_NAME = "deepk/assign2:1.2"
 
     }
+    stages('codeQuality') {
+    }
     
+     stages('Security Yasca') {
+    }
+     stages('kubernetesDeployment') {
+    }
+    
+     stages('regression') {
+    }
+     stages('perfomance') {
+    }
    
     stages {
         
