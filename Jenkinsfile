@@ -9,21 +9,21 @@ pipeline {
         DOCKER_IMAGE_NAME = "deepk/assign2:1.2"
 
     }
-    stages('codeQuality') {
-    }
-    
-     stages('Security Yasca') {
-    }
-     stages('kubernetesDeployment') {
-    }
-    
-     stages('regression') {
-    }
-     stages('perfomance') {
-    }
+   
    
     stages {
-        
+         stage('codeQuality') {
+    }
+    
+     stage('Security Yasca') {
+    }
+     stage('kubernetesDeployment') {
+    }
+    
+     stage('regression') {
+    }
+     stage('perfomance') {
+    }
         stage('pull docker images') {
             agent {
                 docker { image 'deepk/assign2:1.2' }
