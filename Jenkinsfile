@@ -16,15 +16,7 @@ pipeline {
                 }
             }
     }
-     stage('Security Yasca') {
-    }
-     stage('kubernetesDeployment') {
-    }
-    
-     stage('regression') {
-    }
-     stage('perfomance') {
-    }
+     
      }
 }
    /* agent any
