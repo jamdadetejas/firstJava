@@ -1,14 +1,14 @@
 pipeline {
      stage('SCM') {
             steps {
-                git url: 'https://github.com/foo/bar.git'
+                git url: 'https://github.com/MishraKD/firstJava.git'
             }
         }
     stage('codeQuality & analysis') {
         steps {
                 withSonarQubeEnv('My SonarQube Server') {
                     // Optionally use a Maven environment you've configured already
-                    withMaven(maven:'Maven 3.5') {
+                    withMaven(maven:'Maven 3.0.4') {
                         sh 'mvn clean package sonar:sonar'
                     }
                 }
