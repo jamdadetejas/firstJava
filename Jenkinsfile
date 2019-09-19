@@ -23,8 +23,8 @@ pipeline {
     }
      stage('perfomance') {
     }
-
-    agent any
+}
+   /* agent any
 
     environment {
 
@@ -129,6 +129,7 @@ pipeline {
         }
 
     }
+    */
 
-}
+
 
