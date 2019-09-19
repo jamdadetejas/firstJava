@@ -1,4 +1,5 @@
 pipeline {
+     stages{
      stage('SCM') {
             steps {
                 git url: 'https://github.com/MishraKD/firstJava.git'
@@ -23,6 +24,7 @@ pipeline {
     }
      stage('perfomance') {
     }
+     }
 }
    /* agent any
 
