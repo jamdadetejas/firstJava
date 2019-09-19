@@ -1,5 +1,18 @@
 pipeline {
-    stage('codeQuality') {
+     stage('SCM') {
+            steps {
+                git url: 'https://github.com/foo/bar.git'
+            }
+        }
+    stage('codeQuality & analysis') {
+        steps {
+                withSonarQubeEnv('My SonarQube Server') {
+                    // Optionally use a Maven environment you've configured already
+                    withMaven(maven:'Maven 3.5') {
+                        sh 'mvn clean package sonar:sonar'
+                    }
+                }
+            }
     }
      stage('Security Yasca') {
     }
