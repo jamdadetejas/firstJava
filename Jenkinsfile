@@ -8,7 +8,7 @@ pipeline {
             
              kubernetesDeploy(
 
-                    kubeconfigId: 'kubeconfiguration',
+                    kubeconfigId: 'kubeconfig',
 
                     configs: 'deploymentfile.yml',
 
