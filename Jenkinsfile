@@ -1,7 +1,8 @@
 pipeline {
      agent any
      
-     stages{  stage('DeployToProduction') {
+     stages{  
+          stage('DeployToProduction') {
              steps {
 
             
@@ -21,6 +22,7 @@ pipeline {
      
            }
      
+
 }
 
 
